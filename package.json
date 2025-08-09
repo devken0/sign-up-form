@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "sass sass/main.scss css/main.css --style=expanded --watch",
-    "build": "sass sass:dist/css --style=compressed; cp -r assets dist/assets; cp index.html dist/index.html"
+    "build": "sass sass:dist/css --style=compressed; cp -r assets index.html -t dist"
   },
   "repository": {
     "type": "git",
