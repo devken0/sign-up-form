@@ -1,6 +1,12 @@
+$use-gh-pages: #{env(GH_PAGES)};
+
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../assets/images/annie-spratt-4Hpljf9Y1ko-unsplash.jpg");
+  @if $use-gh-pages == "true" {
+    background-image: url("/sign-up-form/assets/images/annie-spratt-4Hpljf9Y1ko-unsplash.jpg");
+  } @else {
+    background-image: url("../assets/images/annie-spratt-4Hpljf9Y1ko-unsplash.jpg");
+  }
 
   /* Set a specific height */
   // height: 100vh;

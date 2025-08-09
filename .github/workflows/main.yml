@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build CSS
-        run: npm run build
+        run: GH_PAGES=true npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with: 
