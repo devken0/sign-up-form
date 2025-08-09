@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+
+.signup-panel__fields {
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  label {
+    text-transform: uppercase;
+    letter-spacing: 0.08rem; 
+  }
+  input {
+    border: 0.05rem solid $light-grey;
+    height: 2rem;
+    max-width: auto;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    font-family: "Inter";
+    padding: 1.5rem 0.8rem;
+    margin-right: 4rem;
+    outline: none;
+    &:focus {
+      border: 0.05rem solid $primary-color;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    &[type=password]:invalid {
+      border-color: red;
+    }
+  }
+
+}
