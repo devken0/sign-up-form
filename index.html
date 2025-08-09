@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/baa397e287.js" crossorigin="anonymous" defer></script>
+  <title>Instachord - login or sign up</title>
+</head>
+<body>
+  <aside class="hero-sidebar">
+    <div class="hero-sidebar__container">
+    <i class="fa-solid fa-music fa-2xl" style="color: #A1A2A3"></i>
+      <span class="hero-sidebar__container--logo-text">Instachord</span>
+    </div>
+    <span class="hero-sidebar__img-credits">
+      Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/brown-guitar-4Hpljf9Y1ko?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </span>
+  </aside>
+  <main class="signup-panel">
+    <h1>Sign Up</h2>
+    <p class="signup-panel__description">Access a library of chord images for praise and worship songs curated by the music ministry of Sitio 3 Community Church.</p>
+    <form action="/" method="post" class="signup-panel__form">
+      <section>
+        <h2 class="signup-panel__form--title">Enter your information
+          <span class="tooltip">
+            <i class="fa-solid fa-circle-info fa-xs"></i>
+            <span class="tip">Required fields are followed by an asterisk.</span>
+          </span>
+        </h2>
+        <div class="signup-panel__fields">
+          <div>
+            <label for="fname" class="required">First Name</label>
+            <input type="text" name="fname" id="user_fname" placeholder="First Name" required autofocus>
+          </div>
+
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="user_lname" placeholder="Last Name" required>
+          </div>
+
+          <div>
+            <label class="required" for="email">Email</label>
+            <input type="email" name="email" id="user_email" placeholder="Email Address" required>
+          </div>
+
+          <div>
+            <label class="required" for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="user_phone" placeholder="Phone Number">
+          </div>
+
+          <div>
+            <label class="required" for="password">Password</label>
+            <input type="password" name="password" id="user_password" placeholder="Password" required>
+          </div>
+
+          <div>
+            <label for="confirm-password" class="required">Confirm Password</label>
+            <input type="password" name="confirm-password" id="user_password" placeholder="Confirm Password" required>
+          </div>
+        </div>
+      </section>
+      <button class="submit-button" type="submit">Create Account</button>
+      <p class="goto-login">Already have an account? <a href="">Login</a></p>
+    </form>
+  </main>
+</body>
+</html>
